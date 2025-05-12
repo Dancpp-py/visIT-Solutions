@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visIT Solutions</title>
+    <link rel="stylesheet" href="STYLES/styles.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="navbar_container">
+
+          <a href="index.html">
+                <img src="Images/visIT.png" alt="Company Logo" class="clogo">
+          </a>
+
+          <div class="burger" onclick="toggleMenu()" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          
+        <div class="nav_links" id="navLinks">
+          <div class="nav_buttons">
+            <button id="homeBtn" class="navBtn" onclick="goTo('home')">Home</button>
+            <button id="aboutBtn" class="navBtn" onclick="scrollToSection('about')">About Us</button>
+            <button id="servicesBtn" class="navBtn" onclick="scrollToSection('serv')">Services</button>
+            <a href="HTML/contact_us.html"><button class="navBtn">Contact Us</button></a>
+          </div>
+        </div>
+
+      </div>
+
+      </nav>
+
+
+<section class="hero-section" id="home">
+  <div class="hero-content">
+    <h1 class="home_heading">visIT Solutions</h1>
+    <p class="home_paragraph">Powering Possibility Through Smart Solutions.</p>
+    <p class="mission-paragraph">
+        We combine cutting-edge technology with deep industry insight to deliver meaningful IT solutions for businesses ready to scale and innovate.
+      </p>
+  </div>
+</section>
+
+<section class="services-preview">
+  <div class="service-card">
+    <h3>Web Development</h3>
+    <p>Modern websites tailored to your brand and business goals.</p>
+  </div>
+  <div class="service-card">
+    <h3>Software Development</h3>
+    <p>Custom solutions that streamline workflows and boost productivity.</p>
+  </div>
+  <div class="service-card">
+    <h3>IT Consulting</h3>
+    <p>Strategic tech guidance to future-proof your business.</p>
+  </div>
+  <div class="service-card">
+    <h3>Cybersecurity</h3>
+    <p>Protecting your data, systems, and reputation.</p>
+  </div>
+</section>
+
+<div class="about_section" id="about">
+  <div class="about_container">
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        At visIT Solutions, we believe technology is more than a tool — it’s a bridge to possibility.
+        Born from a passion for progress and a commitment to meaningful impact, we specialize in delivering
+        innovative IT solutions tailored to the challenges of modern business.
+      </p>
+      <p>
+        Our team of thinkers, builders, and problem-solvers is driven by a single purpose: to empower your growth
+        through intelligent, sustainable, and forward-thinking technology. We don’t just solve problems —
+        we design the future. Whether you're a startup finding your footing or an enterprise scaling new heights,
+        visIT Solutions stands beside you with the expertise, empathy, and vision to make technology work for you.
+      </p>
+     </section>
+  </div>  
+</div>
+
+<section class="main-services" id="services">
+  <div class="serv" id="serv"><h2>Services</h2></div>
+  <div class="big-service-card expandable">
+    <div class="service-image">
+      <img src="Images/Web.jpg" alt="Web Development">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-text">
+      <h2>Web Development</h2>
+      <p>We create fast, responsive, and modern websites tailored to your business needs.</p>
+      <a href="#" onclick="navigateWithFade('HTML/web-development.html')" class="learn-more-btn hidden">Learn More</a>
+    </div>
+  </div>
+
+  <div class="big-service-card expandable">
+    <div class="service-image">
+      <img src="Images/Software.jpg" alt="Software Development">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-text">
+      <h2>Software Development</h2>
+      <p>Custom software solutions built from scratch to match your workflow and solve business challenges.</p>
+      <a href="#" onclick="navigateWithFade('HTML/software-development.html')" class="learn-more-btn hidden">Learn More</a>
+    </div>
+  </div>
+
+  <div class="big-service-card expandable">
+    <div class="service-image">
+      <img src="Images/Consulting.copy.jpg" alt="IT Consulting">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-text">
+      <h2>IT Consulting</h2>
+      <p>Strategic guidance to streamline your IT infrastructure and improve productivity.</p>
+      <a href="#" onclick="navigateWithFade('HTML/It-Consulting.html')" class="learn-more-btn hidden">Learn More</a>
+    </div>
+  </div>
+
+  <div class="big-service-card expandable">
+    <div class="service-image">
+      <img src="Images/Cyber.copy.jpg" alt="Cybersecurity">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-text">
+      <h2>Cybersecurity</h2>
+      <p>Protect your data and systems with our modern cybersecurity strategies and monitoring solutions.</p>
+      <a href="#" onclick="navigateWithFade('HTML/cybersecurity.html')" class="learn-more-btn hidden">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+        <p><strong>Macaraeg Jr, Danilo V.</strong> | BSIT-12A4</p>
+        <p>Email: <a href="mailto:macaraegjr.danilo@ncst.edu.ph">macaraegjr.danilo@ncst.edu.ph</a></p>
+        <p>Mobile: +63 994 779 9148</a></p>
+        </div>
+    </footer>
+
+  
+<script src="JS/web.js"></script>  
+</body>
+</html>

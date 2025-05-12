@@ -1,0 +1,239 @@
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #f0f4f8, #ffff);
+  }
+
+  .navbar {
+    background: linear-gradient(to top, #f0f4f8, #ffff);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  .clogo {
+    width: 70px;
+    height: auto;
+  }
+  
+  .nav_links {
+    display: flex;
+  }
+  
+  .nav_buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navBtn {
+    background: none;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .navBtn:hover {
+    color: #00f7ff;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger.toggle .line2 {
+    opacity: 0;
+  }
+  .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  @media (max-width: 768px) {
+    .nav_links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+  
+    .nav_links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .nav_buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navBtn {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  .service-detail {
+    padding: 120px 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .service-detail h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1f2937;
+  }
+  
+  .service-detail p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .service-detail ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .service-detail li {
+    margin-bottom: 10px;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #374151;
+  }
+  
+  .inquiry-card {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9fafb;
+  }
+  
+  .inquiry-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1f2937;
+  }
+  
+  .inquiry-card label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inquiry-card input,
+  .inquiry-card textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .send-btn {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    background-color: #0097a7;
+  }
+  
+  .footer {
+    margin-top: auto;
+    background: linear-gradient(to top, #f0f4f8, #ffff);
+    color: #333;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .footer a {
+    color: #4db8ff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

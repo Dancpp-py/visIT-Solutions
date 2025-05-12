@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development | visIT Solutions</title>
+  <link rel="stylesheet" href="../STYLES/web_style.css">
+</head>
+<body>
+  <nav class="navbar">
+
+    <div class="navbar_container">
+
+        <a href="../index.html">
+            <img src="../Images/visIT.png" alt="Company Logo" class="clogo">
+          </a>
+
+          <div class="burger" id="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          
+
+    <div class="nav_links" id="navLinks">
+      <div class="nav_buttons">
+        <a href="../index.html"><button id="homeBtn" class="navBtn">Home</button></a>
+        <a href="../index.html#about"><button class="navBtn">About Us</button></a>
+        <a href="../index.html#services"><button class="navBtn">Services</button></a>
+        <a href="../HTML/contact_us.html"><button id="contactBtn" class="navBtn">Contact Us</button>
+        </a>
+      </div>
+    </div>
+
+    </div>
+
+  </nav>
+
+  <section class="service-detail">
+    <h1>Web Development</h1>
+    <p>We specialize in full-stack web development to bring your digital ideas to life with modern, secure, and user-friendly websites and web apps.</p>
+
+    <p><strong>Our services include:</strong></p>
+    <ul>
+      <li>Responsive website design</li>
+      <li>Custom HTML, CSS, JavaScript development</li>
+      <li>Backend integration and database support</li>
+      <li>CMS setup (like WordPress, Joomla)</li>
+      <li>Web application development</li>
+      <li>SEO-friendly coding and optimization</li>
+    </ul>
+
+    <p>Whether you're looking for a simple landing page or a complex web application, visIT Solutions is your partner for reliable and impactful development.</p>
+
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+
+    <div class="inquiry-card">
+      <h2>Send an Inquiry</h2>
+      <form id="inquiryForm">
+        <label for="clientName">Name:</label>
+        <input type="text" id="clientName" name="clientName" placeholder="ex. Danilo Macaraeg Jr">
+    
+        <label for="clientEmail">Email:</label>
+        <input type="email" id="clientEmail" name="clientEmail" placeholder="ex. macaraegDanilo@gmail.com">
+    
+        <label for="clientMessage">Message:</label>
+        <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Type your message..."></textarea>
+    
+        <button type="submit" class="send-btn">Inquire</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+    <p><strong>Macaraeg Jr, Danilo V.</strong> | BSIT-12A4</p>
+    <p>Email: <a href="mailto:macaraegjr.danilo@ncst.edu.ph">macaraegjr.danilo@ncst.edu.ph</a></p>
+    <p>Mobile: +63 994 779 9148</a></p>
+    </div>
+  </footer>
+
+<div id="customAlert" class="custom-alert-overlay">
+  <div class="custom-alert-box">
+    <p id="customAlertMessage">Your message here</p>
+    <button id="customAlertClose" class="alert-close-btn">OK</button>
+  </div>
+</div>
+  <script src="../JS/main.js"></script>
+</body>
+</html>
